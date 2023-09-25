@@ -37,7 +37,7 @@ export default function ProjectsSkills() {
           str={"/gamedev.png"}
           title={"Gandit Card Game"}
           desc={"An In-progress Game"}
-          link={''}
+          link={'https://github.com/VeroDomenico'}
         />
       </div>
     </div>

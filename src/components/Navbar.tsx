@@ -11,20 +11,20 @@ const Navbar = () => {
   };
 
   return (
-      <nav className="sticky bg-black-500 text-white p-4 top-0 w-full border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:w-auto lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+      <nav className="sticky bg-black-500 text-white p-4 top-0 w-full border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:w-auto lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 z-30">
       <div className="flex justify-between items-center">
         <Link href="/">
           <h1 className="font-bold text-2xl">My Portfolio</h1>
         </Link>
         <ul
           className={`${isMenuOpen ? 'block flex flex-col items-center' : 'hidden'} lg:flex lg:flex-row  lg:flex lg:space-x-2`}>
-          <li>
+          <li id='about'>
             <Link href="/about">About</Link>
           </li>
-          <li>
+          <li id='projectSkills'>
             <Link href="/projectsSkills">Project & Skills</Link>
           </li>
-          <li>
+          <li id='contact'>
             <Link href="/contact">Contact</Link>
           </li>
         </ul>

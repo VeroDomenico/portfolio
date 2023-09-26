@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutMe = () => {
   return (
-    <section className="bg-gradient-to-r from-purple-900 to-indigo-700 py-16 text-white rounded-lg w-full">
+    <section className="bg-gradient-to-r from-purple-900 to-indigo-700 py-16 text-white rounded-lg w-full" id={"AboutMe"}>
       <div className="container mx-auto px-4 md:px-8 lg:px-16 shadow-lg ">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="md:w-1/2">

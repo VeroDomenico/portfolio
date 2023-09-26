@@ -3,6 +3,7 @@ import Cards from '../components/Cards/Cards';
 
 export default function ProjectsSkills() {
   return (
+    <section id={"ProjectSkills"}>
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
       <h1 className="text-2xl text-center font-bold mt-6">Companies I've Worked For</h1>
       <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 py-4">
@@ -47,5 +48,6 @@ export default function ProjectsSkills() {
         />
       </div>
     </div>
+    </section>
   );
 }

@@ -9,14 +9,17 @@ export default function ProjectsSkills() {
         <Cards
           str={"/OneImprint.jpg"}
           title={"OneImprint"}
-          desc={"Full-Stack Development"}
+          hover_desc={"Full-Stack Development"}
           link={'https://www.oneimprint.com/'}
+          skill={'PHP, Git, JavaScript'}
         />
         <Cards
           str={"/VisaCCOLicense.png"}
           title={"Visa"}
-          desc={"Engineer"}
+          hover_desc={"Engineer"}
           link={'https://www.visa.com'}
+          skill={' GoLang, Angular, Java, MongoDB, Kubernetes, Docker'}
+
         />
       </div>
       <h1 className="text-2xl text-center font-bold mt-6">Current and Former Projects</h1>
@@ -24,20 +27,23 @@ export default function ProjectsSkills() {
         <Cards
           str={"/aiProject.png"}
           title={"Generative AI Project"}
-          desc={"Capstone Project GAN"}
+          hover_desc={"Capstone Project GAN"}
           link={'https://github.com/TylerWeir/motifgan'}
+          skill={'Python, Tensorflow Framework'}
         />
         <Cards
           str={"/stable algorithmns.png"}
           title={"Stable Algorithms"}
-          desc={"A 2D side-scrolling game"}
+          hover_desc={"A 2D side-scrolling game"}
           link={'https://github.com/bretabel/cool-Math-Game'}
+          skill={'Java, SQL'}
         />
         <Cards
           str={"/gamedev.png"}
           title={"Gandit Card Game"}
-          desc={"An In-progress Game"}
+          hover_desc={"An In-progress Game"}
           link={'https://github.com/VeroDomenico'}
+          skill={'Unity, C#, MongoDB, GoLang'}
         />
       </div>
     </div>

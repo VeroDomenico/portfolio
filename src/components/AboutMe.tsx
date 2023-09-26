@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <section className="bg-gradient-to-r from-purple-900 to-indigo-700 py-16 text-white rounded-lg w-full">
       <div className="container mx-auto px-4 md:px-8 lg:px-16 shadow-lg ">
-        <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="md:w-1/2">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 text-yellow-300 ">About Me</h2>
             <p className="text-lg mb-6">

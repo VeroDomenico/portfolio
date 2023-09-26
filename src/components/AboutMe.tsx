@@ -20,7 +20,7 @@ const AboutMe = () => {
               I am committed to using my skills to create tools that will benefit society. I am also committed to working with others to ensure that these tools are used in a responsible and ethical manner.
             </p>
           </div>
-          <div className="md:w-1/2 mt-8 md:mt-0 md:p-20">
+          <div className="md:w-1/2 mt-8 md:mt-0 py-5 lg:p-16">
             <div className="border rounded-lg shadow-lg p-6 bg-gray-800 text-gray-200">
               <h3 className="text-xl font-semibold mb-4 text-yellow-400">Skills & Expertise</h3>
               <ul className="list-disc ml-6">

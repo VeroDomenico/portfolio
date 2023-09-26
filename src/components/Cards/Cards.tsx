@@ -16,7 +16,7 @@ export default function Cards({ str, hover_desc, title, link, skill}: CardsProps
 
   return (
     <div className="shadow-2xl">
-        <span className="flex justify-center py-2"> {title}</span>
+        <span className="flex justify-center py-2 text-xl"> {title}</span>
     <div className="relative w-64 h-64 px-2 " onClick={handleLinkClick}>
       <img
         className="w-full h-full object-fit"

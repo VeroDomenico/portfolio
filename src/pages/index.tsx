@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google';
 import Typewriter from '../components/Typewrite';
 import AboutMe from '@/components/AboutMe';
-import ProjectsSkills from '@/pages/projectsSkills';
+import ProjectsSkills from '@/components/projectsSkills';
 import ContactMeFooter from '@/components/ContactMeFooter';
 import { Link as ScrollLink, Element } from 'react-scroll'; // Import ScrollLink and Element
 
@@ -26,7 +26,7 @@ export default function Home() {
 
       {/* About Me and Projects/Skills sections */}
       <Element name="about">
-        <div className="bg-white text-black min-h-screen">
+        <div className="bg-grey-200 text-black min-h-screen ">
           <AboutMe />
         </div>
       </Element>
@@ -34,8 +34,6 @@ export default function Home() {
       <Element name="projectSkills" className='bg-white text-black'>
         <ProjectsSkills />
       </Element>
-
-      <ContactMeFooter />
     </div>
   );
 }

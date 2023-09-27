@@ -17,12 +17,12 @@ const Navbar = () => {
         <ul className={`${isMenuOpen ? 'block flex flex-col items-center' : 'hidden'} lg:flex lg:flex-row lg:flex lg:space-x-2`}>
           <li>
             <ScrollLink to="about" smooth={true} duration={500}>
-              About
+              <span className='cursor-pointer'>About</span>
             </ScrollLink>
           </li>
           <li>
             <ScrollLink to="projectSkills" smooth={true} duration={500}>
-              Project & Skills
+            <span className='cursor-pointer'>Project & Skills</span>
             </ScrollLink>
           </li>
         </ul>

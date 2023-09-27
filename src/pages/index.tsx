@@ -3,7 +3,6 @@ import AboutMe from '@/components/AboutMe';
 import ProjectsSkills from '@/pages/projectsSkills';
 import ContactMeFooter from '@/components/ContactMeFooter'
 
-const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (

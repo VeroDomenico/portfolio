@@ -15,7 +15,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center h-screen">
           <div className="mb-4">
             <img
-              className="rounded-full border border-white-900 shadow-md rounded-full scale-75"
+              className="rounded-full border border-white-900 shadow-md rounded-full "
               src="./headshot.png"
               alt="My Profile Picture"
             />

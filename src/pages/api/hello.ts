@@ -9,5 +9,9 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  res.status(200).json({ name: 'John Doe' })
+
+  const ipAddress = req.headers['x-real-ip']?.toString() || 'null';
+  console.log('Headers:', req.headers);
+  
+  res.status(200).json({ name: ipAddress})
 }

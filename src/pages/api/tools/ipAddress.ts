@@ -2,7 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 //test
 type Data = {
-  name: string
+  ipaddress: string
 }
 
 export default function handler(
@@ -11,7 +11,5 @@ export default function handler(
 ) {
 
   const ipAddress = req.headers['x-real-ip']?.toString() || 'null';
-  console.log('Headers:', req.headers);
-  
-  res.status(200).json({ name: ipAddress})
+  res.status(200).json({ ipaddress: ipAddress})
 }

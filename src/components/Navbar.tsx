@@ -9,10 +9,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky bg-black-500 text-white p-4 top-0 w-full border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:w-auto lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 z-30">
+    <nav className="sticky bg-black-500 dark:text-white p-4 top-0 w-full border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:w-auto lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 z-30">
       <div className="flex justify-between items-center">
         <ScrollLink to="home" smooth={true} duration={500}>
-          <h1 className="font-bold text-2xl cursor-pointer">My Portfolio</h1>
+          <h1 className="font-bold text-2xl cursor-pointer ">My Portfolio</h1>
         </ScrollLink>
         <ul className={`${isMenuOpen ? 'block flex flex-col items-center' : 'hidden'} lg:flex lg:flex-row lg:flex lg:space-x-2`}>
           <li>

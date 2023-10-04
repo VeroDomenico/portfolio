@@ -3,6 +3,7 @@ import React from 'react';
 function ContactMeFooter() {
     return (
         <footer className="bg-gray-800 text-white py-8">
+
             <div className="container mx-auto text-center">
                 <h2 className="text-2xl font-semibold mb-4">Contact Me</h2>
                 <p className="text-lg mb-4">

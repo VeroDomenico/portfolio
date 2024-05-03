@@ -43,7 +43,7 @@ export default function ProjectsSkills() {
           str={"/gamedev.png"}
           title={"Gandit Card Game"}
           hover_desc={"An In-progress Game"}
-          link={'https://github.com/VeroDomenico'}
+          link={'https://www.youtube.com/watch?v=ARQCOqAP8EM'}
           skill={'Unity, C#, MongoDB, GoLang'}
         />
       </div>

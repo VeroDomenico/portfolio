@@ -53,9 +53,9 @@ export default function BirthdayCard() {
           onClick={() => setIsOpen(!isOpen)}
         >
           <div className="absolute inset-0 bg-white rounded-lg border-8 border-teal-400">
-            <div className="flex flex-col items-center justify-center h-full p-8 text-teal-600">
+            <div className="flex flex-col items-center justify-center h-full p-8 bg-gradient-to-r from-red-400 via-orange-400 to-purple-400 bg-clip-text text-transparent">
               <h1 className="flex items-center font-bold justify-center text-6xl py-3">Happy Birthday!</h1>
-              <h2 className="font-bold text-5xl py-5 bg-gradient-to-r from-violet-200 via-violet-500 to-indigo-600  bg-clip-text text-transparent">
+              <h2 className="font-bold text-5xl py-5 bg-gradient-to-r from-pink-400  via-blue-300 to-fuchsia-500 bg-clip-text text-transparent">
                 {displayName}
               </h2>
               <h1 className="text-4xl font-bold mb-4">Click to Open!</h1>
@@ -73,12 +73,12 @@ export default function BirthdayCard() {
                 alt="Birthday Cats"
                 className="w-64 h-64 object-contain mb-6"
               />
-              <p className="text-xl text-teal-600 text-center mt-4">
+              <p className="text-xl text-sky-400 text-center mt-4">
                 Hope your special day is as wonderful as you are!
               </p>
               <div
                 onClick={ handleConfetti}
-                className='text-md font-bold text-emerald-400'
+                className='text-md font-bold text-orange-400'
               >
                 Click me to Party!
               </div>

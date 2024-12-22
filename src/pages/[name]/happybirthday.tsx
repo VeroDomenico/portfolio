@@ -8,8 +8,7 @@ import { useRouter } from 'next/router';
 export default function BirthdayCard() {
   const [isOpen, setIsOpen] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
-  
-  // Correctly using useRef
+
   const catRef = useRef<HTMLDivElement | null>(null);
 
   const router = useRouter();
@@ -42,10 +41,11 @@ export default function BirthdayCard() {
   }, [showConfetti]);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-sky-400 to-teal-500">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-sky-400 to-teal-500 px-4 sm:px-8">
       <div 
-        className={`relative w-[600px] h-[400px] transition-all duration-1000 ease-in-out perspective-1000 ${isOpen ? 'card-open' : ''}`}
-        onMouseEnter={() => setShowConfetti(true)}
+        className={`relative w-full max-w-lg h-[400px] sm:h-[500px] transition-all duration-1000 ease-in-out perspective-1000 ${isOpen ? 'card-open' : ''}`}
+        onTouchStart={() => setShowConfetti(true)}  // Mobile touch event
+        onMouseEnter={() => setShowConfetti(true)}  // For desktops
       >
         {/* Card Front */}
         <div
@@ -53,13 +53,13 @@ export default function BirthdayCard() {
           onClick={() => setIsOpen(!isOpen)}
         >
           <div className="absolute inset-0 bg-white rounded-lg border-8 border-teal-400">
-            <div className="flex flex-col items-center justify-center h-full p-8 bg-gradient-to-r from-red-400 via-orange-400 to-purple-400 bg-clip-text text-transparent">
-              <h1 className="flex items-center font-bold justify-center text-6xl py-3">Happy Birthday!</h1>
-              <h2 className="font-bold text-5xl py-5 bg-gradient-to-r from-pink-400  via-blue-300 to-fuchsia-500 bg-clip-text text-transparent">
+            <div className="flex flex-col items-center justify-center h-full p-4 sm:p-8 bg-gradient-to-r from-red-400 via-orange-400 to-purple-400 bg-clip-text text-transparent">
+              <h1 className="text-4xl sm:text-6xl font-bold py-2">Happy Birthday!</h1>
+              <h2 className="font-bold text-2xl sm:text-4xl py-5 bg-gradient-to-r from-pink-400 via-blue-300 to-fuchsia-500 bg-clip-text text-transparent">
                 {displayName}
               </h2>
-              <h1 className="text-4xl font-bold mb-4">Click to Open!</h1>
-              <p className="text-xl">A special message awaits...</p>
+              <h1 className="text-xl sm:text-3xl font-bold mb-4">Click to Open!</h1>
+              <p className="text-lg sm:text-xl">A special message awaits...</p>
             </div>
           </div>
         </div>
@@ -71,14 +71,14 @@ export default function BirthdayCard() {
               <img 
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-owWozEQt70zl85NUjqKlEMnIp8nK4n.png"
                 alt="Birthday Cats"
-                className="w-64 h-64 object-contain mb-6"
+                className="w-48 sm:w-64 h-auto object-contain mb-6"
               />
-              <p className="text-xl text-sky-400 text-center mt-4">
+              <p className="text-lg sm:text-xl text-sky-400 text-center mt-4">
                 Hope your special day is as wonderful as you are!
               </p>
               <div
-                onClick={ handleConfetti}
-                className='text-md font-bold text-orange-400'
+                onClick={handleConfetti}
+                className='text-md sm:text-lg font-bold text-orange-400 cursor-pointer mt-4'
               >
                 Click me to Party!
               </div>

@@ -31,7 +31,7 @@ const AboutMe: React.FC = () => {
               <ul className="text-secondary-light dark:text-secondary-dark mt-2 list-disc list-inside space-y-2">
                 <li>Developed and optimized Airflow workflows for complex data pipelines</li>
                 <li>Integrated authentication systems with A2A and role-based authentication</li>
-                <li>Developed CLI tool reducing manual login tasks by 88%</li>
+                {/* <li>Developed CLI tool reducing manual login tasks by 88%</li> */}
               </ul>
             </div>
 

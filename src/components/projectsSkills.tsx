@@ -38,35 +38,35 @@ const ProjectsSkills: React.FC = () => {
   const projects: Project[] = [
     {
       title: 'StyleGAN Image Generation',
-      description: 'Deep learning model implementation for high-quality image synthesis. Features include style mixing, transfer learning, and multi-GPU training optimization. Achieved 45% improvement in image quality metrics.',
-      technologies: ['Python', 'PyTorch', 'CUDA', 'Docker', 'AWS'],
-      github: 'https://github.com/VeroDomenico/StyleGAN-Implementation',
+      description: 'GAN implementation for musical motif spectrogram generation. This project was done as a senior capstone project in my undergrad studies.',
+      technologies: ['Python', 'PyTorch', 'CUDA'],
+      github: 'https://github.com/TylerWeir/motifgan',
       type: 'Featured'
     },
     {
       title: 'GRPC Task Scheduler',
-      description: 'Distributed task scheduling system with load balancing and fault tolerance. Handles 10k+ concurrent tasks with 99.9% reliability. Includes monitoring, auto-recovery, and horizontal scaling.',
+      description: 'Distributed task scheduling system. This project was created as part of a personal exploration into distributed systems.',
       technologies: ['Go', 'gRPC', 'Protocol Buffers', 'Redis', 'Kubernetes'],
       github: 'https://github.com/VeroDomenico/GRPCTaskScheduler',
       type: 'Featured'
     },
     {
       title: 'Stable Algorithms Library',
-      description: 'High-performance algorithm implementations with comprehensive documentation and testing. 100% test coverage, benchmarking suite, and CI/CD pipeline integration.',
-      technologies: ['C++', 'Python', 'CMake', 'Google Test', 'GitHub Actions'],
-      github: 'https://github.com/VeroDomenico/StableAlgorithms',
+      description: 'An algorithm game made for children to learn about math. This project was done as part of a group exercise with the goal of, beyond making a functional game, taking turns leading daily SCRUM meetings and getting familiar with agile methodology. ',
+      technologies: ['Java', 'SQL'],
+      github: 'https://github.com/bretabel/cool-Math-Game',
       type: 'Open Source'
     },
     {
       title: 'Game Development Portfolio',
-      description: 'Collection of Unity games showcasing advanced graphics, physics simulation, and multiplayer networking. Includes procedural generation and AI-driven NPCs.',
-      technologies: ['Unity', 'C#', 'WebGL', 'Photon Networking', 'ML-Agents'],
-      github: 'https://github.com/VeroDomenico/GameDevPortfolio',
+      description: 'Multiplayer card game under development.',
+      technologies: ['Unity', 'C#', 'GoLang', 'React', 'Node.js', 'PostgreSQL', 'Supabase'],
+
       type: 'Personal'
     },
     {
       title: 'One Imprint Web Platform',
-      description: 'Enterprise e-commerce platform with microservices architecture. Features include real-time analytics, A/B testing, and automated deployment pipeline.',
+      description: 'Architecture for a web platform for a printing company. Now defunct.',
       technologies: ['TypeScript', 'Node.js', 'React', 'PostgreSQL', 'AWS'],
       link: 'https://www.oneimprint.com',
       type: 'Featured'

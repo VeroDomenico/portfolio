@@ -25,14 +25,14 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <span className="text-accent-light dark:text-accent-dark font-mono font-bold text-xl">DM</span>
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-12">
             {navItems.map((item, index) => (
               <ScrollLink
                 key={item}
@@ -42,10 +42,12 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
                 offset={-64}
                 className="group relative font-mono text-secondary-light dark:text-secondary-dark hover:text-accent-light dark:hover:text-accent-dark cursor-pointer capitalize transition-colors duration-200"
               >
-                <span className="text-accent-light dark:text-accent-dark opacity-0 group-hover:opacity-100 absolute -left-4 transition-opacity duration-200">
-                  0{index + 1}.
-                </span>
-                {item}
+                <div className="relative px-2">
+                  <span className="text-accent-light dark:text-accent-dark opacity-0 group-hover:opacity-100 absolute -left-8 transition-opacity duration-200">
+                    {String(index + 1).padStart(2, '0')}.
+                  </span>
+                  <span className="relative">{item}</span>
+                </div>
               </ScrollLink>
             ))}
           </div>
@@ -55,7 +57,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
             <button
               type="button"
               onClick={toggleMobileMenu}
-              className="text-secondary-light dark:text-secondary-dark hover:text-accent-light dark:hover:text-accent-dark focus:outline-none"
+              className="text-secondary-light dark:text-secondary-dark hover:text-accent-light dark:hover:text-accent-dark focus:outline-none p-2"
               aria-controls="mobile-menu"
               aria-expanded={isMobileMenuOpen}
             >
@@ -102,7 +104,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
           isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
         }`}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-surface-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-t border-accent-light/10 dark:border-accent-dark/10">
+        <div className="px-4 pt-2 pb-3 space-y-2 sm:px-6 bg-surface-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-t border-accent-light/10 dark:border-accent-dark/10">
           {navItems.map((item, index) => (
             <ScrollLink
               key={item}
@@ -111,9 +113,11 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
               duration={500}
               offset={-64}
               onClick={closeMobileMenu}
-              className="text-secondary-light dark:text-secondary-dark hover:text-accent-light dark:hover:text-accent-dark block px-3 py-2 rounded-md text-base font-mono capitalize cursor-pointer"
+              className="text-secondary-light dark:text-secondary-dark hover:text-accent-light dark:hover:text-accent-dark block px-4 py-3 rounded-md text-base font-mono capitalize cursor-pointer"
             >
-              <span className="text-accent-light dark:text-accent-dark mr-2">0{index + 1}.</span>
+              <span className="text-accent-light dark:text-accent-dark mr-3">
+                {String(index + 1).padStart(2, '0')}.
+              </span>
               {item}
             </ScrollLink>
           ))}

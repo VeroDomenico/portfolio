@@ -5,7 +5,7 @@ import ProjectsSkills from '@/components/projectsSkills';
 import ContactMeFooter from '@/components/ContactMeFooter';
 import Navbar from '@/components/Navbar';
 import ThemeToggle from '@/components/ThemeToggle';
-import { Element } from 'react-scroll';
+import { Element, Link as ScrollLink } from 'react-scroll';
 import { useEffect, useState } from 'react';
 import { useTheme } from '@/context/ThemeContext';
 
@@ -46,14 +46,17 @@ export default function Home() {
               />
             </div>
             <div className="mt-12 flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '300ms' }}>
-              <a
-                href="#about"
-                className="px-8 py-4 border-2 border-accent-light dark:border-accent-dark text-accent-light dark:text-accent-dark hover:bg-accent-light/10 dark:hover:bg-accent-dark/10 rounded-lg font-mono transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              <ScrollLink
+                to="projects"
+                smooth={true}
+                duration={500}
+                offset={-64}
+                className="px-8 py-4 border-2 border-accent-light dark:border-accent-dark text-accent-light dark:text-accent-dark hover:bg-accent-light/10 dark:hover:bg-accent-dark/10 rounded-lg font-mono transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer"
               >
                 View My Work
-              </a>
+              </ScrollLink>
               <a
-                href="#contact"
+                href="mailto:dmecglobal@gmail.com"
                 className="px-8 py-4 bg-transparent border-2 border-secondary-light dark:border-secondary-dark text-secondary-light dark:text-secondary-dark hover:text-hover-light dark:hover:text-hover-dark hover:border-hover-light dark:hover:border-hover-dark rounded-lg font-mono transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
                 Get in Touch

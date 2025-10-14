@@ -78,7 +78,8 @@ const ProjectsSkills: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="mb-16">
           <h2 className="text-3xl font-mono mb-4">
-            <span className="text-accent-light dark:text-accent-dark">02.</span> Projects
+            <span className="text-accent-dark dark:text-accent-dark">02.</span> 
+            <span id="Background" className="text-2xl text-black font-semibold text-accent-dark dark:text-accent-light mb-4 font-mono"> Background</span>
           </h2>
           <p className="text-secondary-light dark:text-secondary-dark max-w-2xl">
             A collection of software projects showcasing my expertise in distributed systems, 

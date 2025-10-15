@@ -13,7 +13,7 @@ if (typeof window !== 'undefined') {
     api_host: `${window.location.origin}/ingest`,
     ui_host: 'https://us.posthog.com',
     person_profiles: 'identified_only',
-    persistence: 'localStorage+cookie',
+    persistence: 'localStorage',
     cross_subdomain_cookie: false,
     loaded: (posthog) => {
       if (process.env.NODE_ENV === 'development') posthog.debug()

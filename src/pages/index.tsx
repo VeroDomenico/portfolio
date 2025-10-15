@@ -5,6 +5,7 @@ import ProjectsSkills from '@/components/projectsSkills';
 import ContactMeFooter from '@/components/ContactMeFooter';
 import Navbar from '@/components/Navbar';
 import ThemeToggle from '@/components/ThemeToggle';
+import UtmNotice from '@/components/UtmNotice';
 import { Element, Link as ScrollLink } from 'react-scroll';
 import { useEffect, useState } from 'react';
 import { useTheme } from '@/context/ThemeContext';
@@ -27,6 +28,7 @@ export default function Home() {
     <div className={`flex flex-col min-h-screen bg-background-light dark:bg-background-dark transition-colors duration-300`}>
       <Navbar isScrolled={isScrolled} />
       <ThemeToggle />
+      <UtmNotice />
 
       {/* Hero Section */}
       <Element name="home" className="min-h-screen flex items-center justify-center relative px-4 sm:px-6 lg:px-8">

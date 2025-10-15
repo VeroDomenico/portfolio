@@ -16,11 +16,11 @@ const config: Config = {
         },
         background: {
           light: '#FEFAE0', // Cream
-          dark: '#283618',  // Dark olive
+          dark: '#000000',  // True  Black for My Lg Monitor  :D 
         },
         surface: {
           light: '#FEFAE0', // Cream
-          dark: '#606C38',  // Olive green
+          dark: '#000000',  // Olive green
         },
         text: {
           light: '#283618', // Dark olive
@@ -32,7 +32,7 @@ const config: Config = {
         },
         accent: {
           light: '#BC6C25', // Rust orange
-          dark: '#BC6C25',  // Keep rust orange in dark mode
+          dark: '#D3AF37',  // Gold
         },
         hover: {
           light: '#DDA15E', // Light copper

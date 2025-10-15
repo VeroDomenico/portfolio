@@ -21,6 +21,8 @@
     "next": "^13.5.1",
     "npm": "^11.0.0",
     "postcss": "8.4.30",
+    "posthog-js": "^1.275.3",
+    "posthog-node": "^5.10.0",
     "react": "18.2.0",
     "react-canvas-confetti": "^2.0.7",
     "react-dom": "18.2.0",

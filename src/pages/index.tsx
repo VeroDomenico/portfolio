@@ -70,7 +70,7 @@ export default function Home() {
       <Element name="about" className="py-32 bg-surface-light dark:bg-surface-dark transition-colors duration-300">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 animate-slide-up">
           <h2 className="text-2xl font-bold text-text-light dark:text-text-dark mb-8 font-mono flex items-center">
-            <span className="text-accent-light dark:text-accent-dark mr-2">01.</span>
+            <span className="text-accent-light dark:text-accent-dark mr-2">02.</span>
             <span className="relative">
               About Me
               <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-accent-light/20 dark:bg-accent-dark/20"></span>
@@ -84,26 +84,15 @@ export default function Home() {
       <Element name="projects" className="py-32 bg-background-light dark:bg-background-dark transition-colors duration-300">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 animate-slide-up">
           <h2 className="text-2xl font-bold text-text-light dark:text-text-dark mb-8 font-mono flex items-center">
-            <span className="relative">
-              <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-accent-light/20 dark:bg-accent-dark/20"></span>
-            </span>
+            <span className="text-accent-light font-bold dark:text-accent-dark mr-2">03.</span>
+            <span className="relative">Projects</span>
           </h2>
           <ProjectsSkills />
         </div>
       </Element>
-
       {/* Contact Section */}
       <Element name="contact" className="py-32 bg-surface-light dark:bg-surface-dark transition-colors duration-300">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 animate-slide-up">
-          <h2 className="text-2xl font-bold text-text-light dark:text-text-dark mb-8 font-mono flex items-center">
-            <span className="text-accent-light dark:text-accent-dark mr-2">03.</span>
-            <span className="relative">
-              Get in Touch
-              <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-accent-light/20 dark:bg-accent-dark/20"></span>
-            </span>
-          </h2>
           <ContactMeFooter />
-        </div>
       </Element>
     </div>
   );

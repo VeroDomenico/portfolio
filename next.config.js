@@ -15,11 +15,6 @@ const nextConfig = {
       },
     ]
   },
-  webpack: {
-    resolve: {
-      modules: ['node_modules'],
-    },
-  },
 }
 
 module.exports = nextConfig

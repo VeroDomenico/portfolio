@@ -7,6 +7,18 @@ import { useState, useEffect } from 'react';
 import posthog from 'posthog-js';
 import { PostHogProvider } from 'posthog-js/react';
 
+// Check that PostHog is client-side (used to handle Next.js SSR)
+if (typeof window !== 'undefined') {
+  posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY!, {
+    api_host: `${window.location.origin}/ingest`,
+    ui_host: 'https://us.posthog.com',
+    person_profiles: 'identified_only',
+    loaded: (posthog) => {
+      if (process.env.NODE_ENV === 'development') posthog.debug()
+    }
+  })
+}
+
 export default function App({ Component, pageProps }: AppProps) {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -17,17 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
-    posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY as string, {
-      api_host: '/ingest',
-      ui_host: 'https://us.posthog.com',
-      defaults: '2025-05-24',
-      capture_exceptions: true,
-      debug: process.env.NODE_ENV === 'development',
-    });
-  }, []);
+  }, [])
 
   return (
     <PostHogProvider client={posthog}>

@@ -3,8 +3,6 @@ import type { AppProps } from 'next/app'
 import Navbar from '../components/Navbar'
 import ContactMeFooter from '@/components/ContactMeFooter';
 import { ThemeProvider } from '../context/ThemeContext';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import { useState, useEffect } from 'react';
 import posthog from 'posthog-js';
 import { PostHogProvider } from 'posthog-js/react';
